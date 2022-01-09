@@ -1,0 +1,314 @@
+*Store this code in 'style.css' file inside the 'static' folder*/
+html, body, div, p, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+}
+.nav {
+  background: rgba(114, 160, 193, 0.3);
+  height: 60px; /* set same as height & line-height below */
+}
+
+/* This rule centers the nav items verticaly in the bar with the height and line height properties. Spacing between the nav items is controlled by setting right and left padding.  */
+.nav li {
+  display: inline-block;
+  list-style: none;
+  height: 60px; /* should be the same as line-height */
+  line-height: 60px; /* should be the same as height */
+  padding: 0 40px; /* "0" sets top and bottom padding to none */
+}
+
+/* :hover allows you change the background color of the nav items when you mouse over them. Play around with the transition value to change the speed of the hover transition. */
+.nav li:hover {
+  background: rgba(10, 117, 194, 0.3);
+  transition: background .3s;
+}
+
+/* This rule is applied to the link <a> tag. It lets you turn off the link underline and set the link text color. */
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logincontent{
+    margin: 0 auto;
+    height: 500px;
+    width: 400px;
+    background-color: #e6ffee;
+    border-radius: 10px;
+}
+
+.registercontent{
+    margin: 0 auto;
+    height: 720px;
+    width: 400px;
+    background-color: #e6ffee;
+    border-radius: 10px;
+}
+
+.logintop{
+    height: 60px;
+    width: 400px;
+    background-color: #009933;
+    color: #ffffff;
+}
+
+.registertop{
+    height: 60px;
+    width: 400px;
+    background-color: #009933;
+    color: #ffffff;
+}
+
+.textbox{
+    padding: 10px 40px;
+    background-color: #009933;
+    border-radius: 10px;
+}
+
+::placeholder {
+    color: #FFFFFF;
+    opacity: 1;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 10px 40px;
+    background-color: #009933;
+    color: #FFFFFF;
+    font-style: oblique;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.worddark{
+    color: #009933;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.wordlight{
+    color: #FFFFFF;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+/*
+.one{
+    display: flex;
+    position: relative;
+}
+
+.one .two{
+     width: 225px;
+    height: 100%;
+    background: #009933;
+    padding: 30px 0px;
+    position: fixed;
+}
+
+.one .two h1{
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: oblique;
+    font-weight: bold;
+}
+
+.one .two h2{
+    color: #fff;
+    text-align: center;
+}
+
+.one .two .active{
+     background: #0a8032;
+}
+
+.one .two ul li{
+    text-align: center;
+    padding: 15px;
+    border-bottom: 0.1px solid white;
+    border-top: 0.1px solid white;
+}
+
+.one .two ul li a{
+    color: #ffffff;
+    display: block;
+}
+
+.one .two ul li a .side{
+    width: 25px;
+    align:center;
+}
+
+.one .content{
+    width: 100%;
+    margin-left: 200px;
+}
+
+.one .content .topbar{
+    text-align: center;
+    padding: 20px;
+    background: #00b33c;
+    color: white;
+}
+
+.one .content .contentbar{
+    margin: auto;
+}
+
+.one .content .contentbar h1{
+    color: #11a844;
+    text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+}
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  color: #000;
+  display: block;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size:14px;
+}
+li a:hover {
+  text-decoration: underline;
+}
+*/
+.grid{
+  height:23px;
+  position:relative;
+  bottom:4px;
+}
+.signbutton{
+  background-color: #4885ed;
+  color: #fff;
+  border:none;
+  border-radius:3px;
+  padding:7px 10px;
+  position:relative;
+  bottom:7px;
+  font-weight:bold;
+}
+.logo{
+  margin-top:200px;
+  margin-bottom:20px;
+}
+.bar{
+  margin:0 auto;
+  width:575px;
+  border-radius:30px;
+  border:1px solid #dcdcdc;
+}
+.bar:hover{
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+}
+.bar:focus-within{
+  box-shadow: 1px 1px 8px 1px #dcdcdc;
+  outline:none;
+}
+.searchbar{
+  height:45px;
+  border:none;
+  width:500px;
+  font-size:16px;
+  outline: none;
+
+}
+.voice{
+  height:20px;
+  position:relative;
+  top:5px;
+  left:10px;
+}
+.buttons{
+  margin-top:30px;
+}
+.button{
+  background-color: #f5f5f5;
+  border:none;
+  color:#707070;
+  font-size:15px;
+  padding: 10px 20px;
+  margin:5px;
+  border-radius:4px;
+  outline:none;
+}
+.button:hover{
+  border: 1px solid #c8c8c8;
+  padding: 9px 19px;
+  color:#808080;
+}
+.button:focus{
+  border:1px solid #4885ed;
+  padding: 9px 19px;
+}
+
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  min-width: 800px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background:rgba(255,255,255,0.7);
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background:rgba(255,255,255,0.2);
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  background:rgba(255,255,255,0.2);
+}
+
+.raleway {
+  font-family: Raleway;
+}

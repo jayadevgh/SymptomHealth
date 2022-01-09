@@ -1,0 +1,61 @@
+
+<!--Store this code in 'index.html' file inside the 'templates' folder-->
+<html lang="en">
+    <head>
+        <title>index</title>
+        <link rel="stylesheet" href="../static/style.css">
+    </head>
+    <body style="background-image: url('../static/background.jpg');">
+
+        <center>
+            <header>
+                <ul>
+
+                  </ul>
+            </header>
+            <div class="nav">
+              <ul>
+                <li><a href="{{url_for('symptom')}}" class="nav-link"><h3>Home</h3></a></li>
+                <li><a href="{{url_for('information')}}" class="nav-link"><h3>Information</h3></a></li>
+                <li><a href="{{url_for('covid_info')}}" class="nav-link"><h3>Covid News</h3></a></li>
+                  <li><a href="{{url_for('redirecting')}}" class="nav-link"><h3>Hospitals Near You</h3></a></li>
+                  <li><a href="{{url_for('address')}}" class="nav-link"><h3>Hospital Address</h3></a></li>
+              </ul>
+            </div>
+            <div class="logo">
+              <img alt="SYMPTOMATIC" src="../static/symptomatic.png">
+            </div>
+            <div class="bar">
+            <form action="{{ url_for('result')}}" method="post">
+              <input name="searchbar" class="searchbar" title="Search" type="text">
+<!--                <input type="submit" value="...." style="background-color:transparent; border-color:transparent;">-->
+                <img alt="SYMPTOMATIC" src="../static/search-icon.png">
+
+
+            </form>
+            </div>
+            {% if results %}
+            <div>
+                <table class="content-table" >
+                  <tbody>
+                    <thead>
+                        <td>Disease</td>
+                        <td>Symptoms</td>
+                    </thead>
+                    {% for arr in results %}
+                    <tr>
+
+                        {% for element in arr %}
+                        <td><div class="raleway">{{ element }}</div></td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+
+                  </tbody>
+                </table>
+            </div>
+            {% endif %}
+        </center>
+
+    </body>
+</html>

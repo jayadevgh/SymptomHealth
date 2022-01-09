@@ -1,0 +1,12 @@
+{% extends "basic.html" %}
+{% block title%}{% endblock %}
+
+{% block content %}
+<form method = "post">
+	<p>Enter City and State:</p>
+	<p><input type = "text" name = "nm" placeholder="i.g. City, State" /></p>
+	<p><input type = "submit" value = "submit"/></p>
+</form>
+{% endblock %}
+
+<!-- action="{{ url_for('redirecting') }}" -->
